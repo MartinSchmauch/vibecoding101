@@ -1,0 +1,20 @@
+.PHONY: setup dev docker-build docker-run test deploy
+
+setup:
+    python3 -m venv venv
+    . venv/bin/activate && pip install -r requirements.txt
+
+dev:
+    python app.py
+
+docker-build:
+    docker build -t meine-app:latest .
+
+docker-run: docker-build
+    docker run -p 8080:8080 --env-file .env meine-app:latest
+
+test:
+    pytest tests/
+
+deploy:
+    git add . && git commit -m "Deploy" && git push

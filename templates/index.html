@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Meine App</title>
+</head>
+<body>
+    <h1>🚀 Meine App funktioniert!</h1>
+    <script>
+        fetch('/api/health')
+            .then(r => r.json())
+            .then(data => console.log('Health:', data));
+    </script>
+</body>
+</html>
