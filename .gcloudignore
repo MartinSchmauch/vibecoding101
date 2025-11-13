@@ -1,0 +1,55 @@
+# Git files
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+test_december.py
+test.py
+*.log
+
+# Documentation (not needed in production)
+README.md
+DEVELOPMENT.md
+AWS_DEPLOYMENT.md
+QUICKSTART.md
+STRUCTURE.md
+GMAIL_SETUP.md
+VIDEO_INTRO.md
+CUSTOMIZATION.md
+SECURITY.md
+
+# Scripts
+setup.sh
+start.sh
+create_placeholder_images.py
+
+# Deployment configs for other platforms
+deploy/
+docker-compose.yml

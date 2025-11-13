@@ -1,0 +1,22 @@
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.lock.hcl
+
+# GCP
+gcp-key.json
+
+# TODO: remove in case other json files are needed!
+*.json 
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Env
+.env
+
+# Mac system files
+.DS_Store
